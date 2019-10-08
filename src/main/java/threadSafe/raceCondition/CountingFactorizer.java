@@ -6,6 +6,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @ThreadSafe
 public class CountingFactorizer {
+    //使用线程安全对象保存状态
     private final AtomicLong count = new AtomicLong(0);
 
     public long getCount() {
